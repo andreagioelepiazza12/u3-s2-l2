@@ -33,8 +33,8 @@ const BookList = ({ books }) => {
                 <Form.Control
                   type="search"
                   placeholder="Cerca un libro"
-                  value={searchQuery} // Usa il valore corretto
-                  onChange={(e) => setSearchQuery(e.target.value)} // Aggiorna lo stato
+                  value={searchQuery} 
+                  onChange={(e) => setSearchQuery(e.target.value)} 
                 />
               </Form.Group>
             </Col>
