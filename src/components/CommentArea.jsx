@@ -23,7 +23,7 @@ const CommentArea = ({ asin }) => {
 
     useEffect(() => {
       const fetchComments = async () => {
-        if (!asin) return; 
+         
         setIsLoading(true);
         try {
           let response = await fetch(
@@ -31,7 +31,7 @@ const CommentArea = ({ asin }) => {
             {
               headers: {
                 Authorization:
-                  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzRkZDE1ZGM5MjI4ZDAwMTVmYWQzNTMiLCJpYXQiOjE3MzMyMzc3ODksImV4cCI6MTczNDQ0NzM4OX0.55v4grDd71hxVkuIIrbqStfvnxetJSkcnckTFGqtyFI',
+                  'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzRkZDE1ZGM5MjI4ZDAwMTVmYWQzNTMiLCJpYXQiOjE3MzMyMzc3ODksImV4cCI6MTczNDQ0NzM4OX0.55v4grDd71hxVkuIIrbqStfvnxetJSkcnckTFGqtyFI',
               },
             }
           );
